@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdalla Mohamed | Data Analyst & Engineer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Abdalla Mohamed, Helwan University Computer Science student and Data Analyst skilled in Excel, SQL, Python, Power BI, Java, and C++.">
+  <meta name="author" content="Abdalla Mohamed">
+  <meta property="og:title" content="Abdalla Mohamed | Data Analyst & Engineer">
+  <meta property="og:description" content="I don't just extract data — I understand how systems and software are built.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abdalla820.github.io/">
+  <meta name="theme-color" content="#0A0E1A">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== SVG ICON SPRITE ==================== -->
+  <svg width="0" height="0" style="position:absolute;display:none" aria-hidden="true">
+    <symbol id="gh" viewBox="0 0 24 24">
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+      <path d="M9 18c-4.51 2-5-2-7-2"/>
+    </symbol>
+    <symbol id="li" viewBox="0 0 24 24">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+      <rect width="4" height="12" x="2" y="9"/>
+      <circle cx="4" cy="4" r="2"/>
+    </symbol>
+    <symbol id="ml" viewBox="0 0 24 24">
+      <rect width="20" height="16" x="2" y="4" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </symbol>
+    <symbol id="wa" viewBox="0 0 24 24">
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+    </symbol>
+    <symbol id="doc" viewBox="0 0 24 24">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <polyline points="14 2 14 8 20 8"/>
+      <line x1="16" y1="13" x2="8" y2="13"/>
+      <line x1="16" y1="17" x2="8" y2="17"/>
+      <polyline points="10 9 9 9 8 9"/>
+    </symbol>
+    <symbol id="download" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </symbol>
+  </svg>
+
+  <!-- Page Loader -->
+  <div id="loader" role="status" aria-live="polite">
+    <i></i>
+    <b>Abdalla<span class="dot">.</span></b>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="bar" aria-hidden="true"></div>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="#home" aria-label="Abdalla Mohamed Home">
+        Abdalla<span class="dot">.</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="links" aria-label="Primary Navigation">
+        <a class="l on" href="#home" data-r="home">Home</a>
+        <a class="l" href="#about" data-r="about">About</a>
+        <a class="l" href="#skills" data-r="skills">Skills</a>
+        <a class="l" href="#projects" data-r="projects">Projects</a>
+        <a class="l" href="#team" data-r="team">Team Work</a>
+        <a class="l" href="#contact" data-r="contact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & Mobile Menu Button) -->
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☀</span>
+          <span class="theme-label">Light</span>
+        </button>
+        <a class="nav-cta" href="#contact">Hire Me</a>
+        <button class="burger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <nav class="ov" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="#home" data-r="home">Home</a>
+    <a href="#about" data-r="about">About</a>
+    <a href="#skills" data-r="skills">Skills</a>
+    <a href="#projects" data-r="projects">Projects</a>
+    <a href="#team" data-r="team">Team Work</a>
+    <a href="#contact" data-r="contact">Contact</a>
+  </nav>
+
+  <!-- ==================== PAGE 1: HOME ==================== -->
+  <main id="home">
+    
+    <!-- 1. HERO SECTION -->
+    <section class="wrap hero">
+      <div class="hero-l">
+        <div class="pill" style="--i:0">
+          <img src="images/Abdalla2.jpeg" alt="Abdalla Mohamed" class="pill-avatar">
+          <span class="pulse-dot"></span>
+          <span>Helwan University • 3rd Year • Open to Internships</span>
+        </div>
+
+        <h1 style="--i:1">
+          Hi, I'm<br>
+          <span class="grad">Abdalla Mohamed</span>
+        </h1>
+
+        <div class="type" style="--i:2">
+          <span id="typed">Data Analyst</span><s>|</s>
+        </div>
+
+        <p class="lead" style="--i:3">
+          I am a detail-oriented Data Analyst and Computer Science student. I combine strong business intelligence expertise in <strong>Excel, SQL, Python, and Power BI</strong> with fundamental software engineering knowledge in <strong>Java and C++</strong> to build robust, scalable analytics solutions.
+        </p>
+
+        <div class="row" style="--i:4">
+          <a class="btn pri" href="#projects">View Projects →</a>
+          <a class="btn out" href="#contact">Contact Me</a>
+          <a class="btn subtle" href="Abdalla-CV.docx" download="Abdalla-CV.docx">
+            <svg class="i" style="width:16px;height:16px"><use href="#download"/></svg>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        <div class="row find" style="--i:5">
+          <span>Connect with me</span>
+          <div class="soc">
+            <a href="https://github.com/Abdalla820" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="i"><use href="#gh"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abdalla-mohamed-farouk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsEmHBljrT8Cfxd3ZBvS7eg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="i"><use href="#li"/></svg>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdallamohamed8354@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+              <svg class="i"><use href="#ml"/></svg>
+            </a>
+            <a href="https://wa.me/201205479856" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg class="i"><use href="#wa"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Dashboard Visualization -->
+      <div class="chart">
+        <div class="cc">
+          <div class="chart-header">
+            <div class="chart-title">
+              <span class="chart-indicator"></span>
+              <span>Analytics Dashboard Metric</span>
+            </div>
+            <div class="chart-stat">+34.8% YoY</div>
+          </div>
+
+          <svg viewBox="0 0 400 260" role="img" aria-label="Animated bar and line performance chart">
+            <defs>
+              <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--cyan)"/>
+                <stop offset="100%" stop-color="var(--violet)"/>
+              </linearGradient>
+            </defs>
+            <g stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4">
+              <path d="M10 50h380M10 100h380M10 150h380M10 200h380M10 240h380"/>
+            </g>
+            <g class="bars" fill="url(#barGradient)">
+              <rect style="--i:0" x="24" y="175" width="38" height="65" rx="8"/>
+              <rect style="--i:1" x="86" y="145" width="38" height="95" rx="8"/>
+              <rect style="--i:2" x="148" y="120" width="38" height="120" rx="8"/>
+              <rect style="--i:3" x="210" y="95" width="38" height="145" rx="8"/>
+              <rect style="--i:4" x="272" y="65" width="38" height="175" rx="8"/>
+              <rect style="--i:5" x="334" y="35" width="38" height="205" rx="8"/>
+            </g>
+            <path class="ln" pathLength="1" d="M43 170 C90 150, 110 135, 148 120 S215 90, 272 60 S340 30, 353 22" fill="none" stroke="var(--cyan)" stroke-width="3.5" stroke-linecap="round"/>
+            <circle class="pk" cx="353" cy="22" r="6" fill="var(--cyan)" stroke="var(--bg)" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <!-- Floating Badges -->
+        <span class="fb sql" style="--d:0s">SQL Optimization</span>
+        <span class="fb xl" style="--d:-0.8s">Excel Modeling</span>
+        <span class="fb bi" style="--d:-1.6s">Power BI Dashboards</span>
+        <span class="fb py" style="--d:-2.4s">Python &amp; Pandas</span>
+      </div>
+    </section>
+
+    <!-- 2. STATS STRIP -->
+    <section class="wrap">
+      <div class="stats-strip rv">
+        <div class="stat-card">
+          <div class="stat-num">3rd</div>
+          <div class="stat-label">Year CS at Helwan University</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Core BI &amp; Analytics Tools</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">OOP &amp; DS</div>
+          <div class="stat-label">Java &amp; C++ System Knowledge</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">Open</div>
+          <div class="stat-label">Available for Internships</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section class="wrap sec" id="about">
+      <p class="label rv x">01 — About</p>
+      <h2 class="t rv">About me</h2>
+      <div class="about">
+        <!-- Profile Portrait Showcase -->
+        <div class="about-photo-wrapper rv">
+          <div class="about-photo-card">
+            <div class="photo-stat-chip">
+              <span class="chip-icon">🎓</span>
+              <span>3rd Year CS Student</span>
+            </div>
+            <div class="about-photo-frame">
+              <img src="images/Abdalla2.jpeg" alt="Abdalla Mohamed — Data Analyst" class="about-img" loading="lazy">
+              <div class="photo-overlay-badge">
+                <span class="photo-badge-dot"></span>
+                <div class="photo-badge-text">
+                  <b>Abdalla Mohamed</b>
+                  <small>Data Analyst &amp; CS Student • Cairo</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio & Credentials -->
+        <div class="about-content rv" style="--d:0.15s">
+          <p>
+            <strong>I'm Abdullah Mohamed Farouk Ibrahim</strong>, a third-year student at Helwan University in Cairo. I combine an analytical mindset with solid programming foundations — proficient in <mark>Excel</mark>, <mark>SQL</mark>, <mark>Python</mark>, and <mark>Power BI</mark>, backed by core competencies in Object-Oriented Programming with <mark>Java</mark> and Data Structures with <mark>C++</mark>.
+          </p>
+          <p>
+            A high-performing analyst doesn't merely run queries; they understand how database engines execute joins, how data pipelines store information, and how software systems operate under the hood. That engineering discipline gives my analytics higher accuracy, efficiency, and reliability.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-tag">
+              <span>✓</span> Full-Cycle Data Cleaning &amp; ETL
+            </div>
+            <div class="feature-tag">
+              <span>✓</span> KPI Dashboards &amp; Reporting
+            </div>
+            <div class="feature-tag">
+              <span>✓</span> SQL Aggregations &amp; Subqueries
+            </div>
+            <div class="feature-tag">
+              <span>✓</span> Systematic Root-Cause Analysis
+            </div>
+          </div>
+
+          <div class="card info">
+            <div class="info-item">
+              <div class="icon">🎓</div>
+              <div>
+                <small>Education</small>
+                <b>Helwan University, 3rd Year</b>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">📍</div>
+              <div>
+                <small>Location</small>
+                <b>Cairo, Egypt</b>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">💼</div>
+              <div>
+                <small>Availability</small>
+                <b>Open to Internships (Remote / Hybrid)</b>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">🗣️</div>
+              <div>
+                <small>Languages</small>
+                <b>Arabic (Native), English (Intermediate)</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section class="wrap sec" id="skills">
+      <p class="label rv x">02 — Skills</p>
+      <h2 class="t rv">What I bring</h2>
+      <p class="sub rv">A synergy of analytical rigor, business intelligence, and software craftsmanship.</p>
+
+      <div class="grid">
+        <article class="card bc rv" style="--c:var(--cyan)">
+          <div>
+            <div class="ic">📈</div>
+            <h3>Data Analysis &amp; BI</h3>
+            <p>Advanced Excel (Pivot Tables, XLOOKUP, Nested Formulas, Data Modeling) and Power BI interactive dashboards (KPI metric cards, DAX measures, automated reporting).</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">DAX</span>
+          </div>
+        </article>
+
+        <article class="card bc rv" style="--c:var(--violet);--d:0.1s">
+          <div>
+            <div class="ic">🗄️</div>
+            <h3>Relational Databases &amp; SQL</h3>
+            <p>Writing and optimizing complex SQL queries, multi-table joins, subqueries, grouping, aggregations, schema design, and query optimization for MySQL and relational databases.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Complex Joins</span>
+            <span class="tag">Query Optimization</span>
+            <span class="tag">Aggregation</span>
+          </div>
+        </article>
+
+        <article class="card bc rv" style="--c:var(--emerald);--d:0.2s">
+          <div>
+            <div class="ic">💻</div>
+            <h3>Software Foundations</h3>
+            <p>Strong comprehension of Object-Oriented Programming (Java) — Encapsulation, Inheritance, Polymorphism — and fundamental Data Structures in C++ (Arrays, Stacks, Queues, Trees).</p>
+          </div>
+          <div class="tags">
+            <span class="tag">OOP Java</span>
+            <span class="tag">Data Structures C++</span>
+            <span class="tag">Logic &amp; Problem Solving</span>
+          </div>
+        </article>
+
+        <article class="card bc rv" style="--c:var(--orange);--d:0.3s">
+          <div>
+            <div class="ic">⚡</div>
+            <h3>Agile Mindset &amp; Impact</h3>
+            <p>Quick learner capable of adapting to emerging data tools and business requirements. Committed to clear communication, team collaboration, and high-impact deliverables.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Adaptable</span>
+            <span class="tag">Critical Thinking</span>
+            <span class="tag">Collaboration</span>
+            <span class="tag">Self-Driven</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. GOAL & CTA SECTION -->
+    <section class="wrap sec">
+      <div class="goal rv">
+        <div>
+          <p class="label">🎯 Career Objective</p>
+          <h3>I am currently seeking an internship or entry-level data analyst position — remote, hybrid, or full-time — where I can apply my skills, solve challenging real-world problems, and contribute to business growth.</h3>
+          <a class="btn out" href="#contact">Let's talk →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== PAGE 2: PROJECTS ==================== -->
+  <main id="projects" class="wrap project-page">
+    <p class="label">03 — Projects</p>
+    <h2 class="t">My Projects</h2>
+    <p class="sub">A curated selection of data analysis projects, business dashboards, and technical projects.</p>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="bi">BI &amp; Dashboards</button>
+      <button class="filter-btn" data-filter="sql">SQL &amp; Database</button>
+      <button class="filter-btn" data-filter="code">Engineering &amp; Code</button>
+    </div>
+
+    <div class="pdf-grid">
+      <!-- Project 1: Merceds-Sales -->
+      <article class="project-card" data-category="bi">
+        <div>
+          <span class="project-badge">📊 Sales-Dashboard </span>
+          <h3>Merceds-Sales Analysis</h3>
+          <p>
+             Analyzed Mercedes-Benz sales data from 2019 to 2023, covering 30+ car models across multiple countries and sales channels.
+          </p>
+          <div class="tags" style="margin-bottom:20px">
+            <span class="tag" style="--c:var(--cyan)">Power BI</span>
+            <span class="tag" style="--c:var(--violet)">Data Visualization</span>
+            <span class="tag" style="--c:var(--orange)">Presentation</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="file-pill">
+            <svg class="i" style="width:14px;height:14px"><use href="#doc"/></svg>
+            PPTX Presentation • 50 MB
+          </span>
+          <a class="action-btn" href="Merceds.pptx" download="Merceds.pptx">
+            <svg class="i" style="width:14px;height:14px"><use href="#download"/></svg>
+            Download pptx
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ==================== PAGE 3: TEAM WORK ==================== -->
+  <main id="team" class="wrap project-page">
+    <p class="label">04 — Team Work</p>
+    <h2 class="t">Collaborative Team Work</h2>
+    <p class="sub">Key deliverables, group research initiatives, and presentations created in collaborative environments.</p>
+
+    <div class="pdf-grid" style="margin-top:36px">
+      <article class="project-card">
+        <div>
+          <span class="project-badge">👥 Team Project Deliverable</span>
+          <h3>Global Inflation 2000-2025</h3>
+          <p>
+             Analyzed 25 years (2000–2025) of global inflation data from the World Bank across countries and regions.
+          </p>
+          <div class="tags" style="margin-bottom:20px">
+            <span class="tag" style="--c:var(--cyan)">Team Collaboration</span>
+            <span class="tag" style="--c:var(--violet)">SQL & Python</span>
+            <span class="tag" style="--c:var(--orange)">Excel & Power BI</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="file-pill">
+            <svg class="i" style="width:14px;height:14px"><use href="#doc"/></svg>
+            Microsoft PowerPoint • 81 MB
+          </span>
+          <a class="action-btn" href="Presentation Global Inflation Project.pptx" download="Presentation Global Inflation Project.pptx">
+            <svg class="i" style="width:14px;height:14px"><use href="#download"/></svg>
+            Download Presentation
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ==================== PAGE 4: CONTACT ==================== -->
+  <main id="contact" class="wrap project-page">
+    <p class="label">05 — Contact</p>
+    <h2 class="t">Let's Connect</h2>
+    <p class="sub">Have an opportunity, internship, or project to discuss? Reach out through any of the channels below.</p>
+
+    <div class="contact-layout">
+      <!-- Direct Contact Cards -->
+      <div class="contact-card-box">
+        <div class="contact-profile-card">
+          <img src="images/Abdalla2.jpeg" alt="Abdalla Mohamed" class="contact-avatar">
+          <div>
+            <h3>Abdalla Mohamed</h3>
+            <p>Data Analyst • Helwan University • Cairo, Egypt</p>
+            <span class="contact-status-tag"><span class="pulse-dot"></span> Available for Internships</span>
+          </div>
+        </div>
+
+        <div class="contact-tile">
+          <div class="contact-info-block">
+            <div class="contact-icon-wrap">
+              <svg class="i"><use href="#ml"/></svg>
+            </div>
+            <div>
+              <small>Direct Email</small>
+              <span>abdallamohamed8354@gmail.com</span>
+            </div>
+          </div>
+          <button class="copy-btn" data-copy-email="abdallamohamed8354@gmail.com" type="button">Copy</button>
+        </div>
+
+        <a class="contact-tile" href="https://wa.me/201205479856" target="_blank" rel="noopener noreferrer">
+          <div class="contact-info-block">
+            <div class="contact-icon-wrap" style="color:var(--emerald)">
+              <svg class="i"><use href="#wa"/></svg>
+            </div>
+            <div>
+              <small>WhatsApp</small>
+              <span>+20 120 547 9856</span>
+            </div>
+          </div>
+          <span class="action-btn" style="padding:6px 14px;font-size:0.8125rem">Chat →</span>
+        </a>
+
+        <a class="contact-tile" href="https://www.linkedin.com/in/abdalla-mohamed-farouk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsEmHBljrT8Cfxd3ZBvS7eg%3D%3D" target="_blank" rel="noopener noreferrer">
+          <div class="contact-info-block">
+            <div class="contact-icon-wrap" style="color:var(--violet)">
+              <svg class="i"><use href="#li"/></svg>
+            </div>
+            <div>
+              <small>LinkedIn</small>
+              <span>Abdalla Mohamed Farouk</span>
+            </div>
+          </div>
+          <span class="action-btn" style="padding:6px 14px;font-size:0.8125rem">Connect →</span>
+        </a>
+
+        <a class="contact-tile" href="https://github.com/Abdalla820" target="_blank" rel="noopener noreferrer">
+          <div class="contact-info-block">
+            <div class="contact-icon-wrap">
+              <svg class="i"><use href="#gh"/></svg>
+            </div>
+            <div>
+              <small>GitHub</small>
+              <span>github.com/Abdalla820</span>
+            </div>
+          </div>
+          <span class="action-btn" style="padding:6px 14px;font-size:0.8125rem">Follow →</span>
+        </a>
+      </div>
+      <form class="contact-form" id="contact-form"
+          action="https://formspree.io/f/myekzkop" method="POST">
+      <h3 style="font-size:1.35rem;font-weight:700">Send a Quick Message</h3>
+
+      <div class="form-group">
+        <label for="form-name">Your Name</label>
+        <input type="text" id="form-name" name="name" required placeholder="e.g. John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="form-email">Your Email</label>
+        <input type="email" id="form-email" name="email" required placeholder="name@company.com">
+      </div>
+
+      <div class="form-group">
+        <label for="form-message">Message</label>
+        <textarea id="form-message" name="message" required placeholder="Tell me about the opportunity or project..."></textarea>
+      </div>
+      <p id="form-status" style="margin:0;font-size:.95rem"></p>  
+      <button type="submit" class="btn pri" style="width:100%">
+        Send Message ✉
+      </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="wrap">
+      <div class="fg">
+        <div>
+          <p class="logo">Abdalla<span class="dot">.</span></p>
+          <p style="margin-top:8px">Data Analyst &amp; Computer Science Student</p>
+          <p style="color:var(--mute);font-size:0.875rem">Helwan University • Cairo, Egypt</p>
+        </div>
+
+        <nav aria-label="Footer Navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#team">Team Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="r">
+          <div class="soc">
+            <a href="https://github.com/Abdalla820" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="i"><use href="#gh"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abdalla-mohamed-farouk/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsEmHBljrT8Cfxd3ZBvS7eg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="i"><use href="#li"/></svg>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdallamohamed8354@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+              <svg class="i"><use href="#ml"/></svg>
+            </a>
+            <a href="https://wa.me/201205479856" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg class="i"><use href="#wa"/></svg>
+            </a>
+          </div>
+          <p style="color:var(--mute);font-size:0.875rem">© 2026 Abdalla Mohamed. All rights reserved.</p>
+        </div>
+      </div>
+
+      <p class="built">Engineered with precision &amp; care 💙</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="top" type="button" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
